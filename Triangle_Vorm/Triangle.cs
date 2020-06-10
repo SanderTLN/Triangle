@@ -11,11 +11,19 @@ namespace Triangle_Vorm
         public double a;
         public double b;
         public double c;
+        public double h;
         public Triangle(double A, double B, double C)
         {
             a = A;
             b = B;
             c = C;
+        }
+        public Triangle(double A, double B, double C, double H)
+        {
+            a = A;
+            b = B;
+            c = C;
+            h = H;
         }
         public string outputA()
         {
@@ -42,6 +50,16 @@ namespace Triangle_Vorm
             p = (a + b + c) / 2;
             s = Math.Floor(Math.Sqrt((p * (p - a) * (p - b) * (p - c))));
             return s;
+        }
+        public double HalfPerimeter()
+        {
+            return Perimeter() / 2;
+        }
+        public double Height() // Метод нахождения высоты
+        {
+            double p = HalfPerimeter();
+            double h = Math.Floor(2 * Math.Sqrt(p * (p - a) * (p - b) * (p - c)) / a);
+            return h;
         }
         public double GetSetA
         {
