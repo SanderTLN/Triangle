@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
+            this.Run_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtC = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // Run_button
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderSize = 10;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(423, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 76);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Запуск";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Run_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Run_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Run_button.FlatAppearance.BorderSize = 10;
+            this.Run_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Run_button.Font = new System.Drawing.Font("Mongolian Baiti", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Run_button.Location = new System.Drawing.Point(423, 12);
+            this.Run_button.Name = "Run_button";
+            this.Run_button.Size = new System.Drawing.Size(149, 76);
+            this.Run_button.TabIndex = 0;
+            this.Run_button.Text = "Запуск";
+            this.Run_button.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -89,38 +89,38 @@
             this.columnHeader2.Text = "Значение";
             this.columnHeader2.Width = 164;
             // 
-            // textBox1
+            // txtA
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 161);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(147, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtA.Location = new System.Drawing.Point(12, 161);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(147, 20);
+            this.txtA.TabIndex = 3;
             // 
-            // textBox2
+            // txtB
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 187);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtB.Location = new System.Drawing.Point(12, 187);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(147, 20);
+            this.txtB.TabIndex = 4;
             // 
-            // textBox3
+            // txtC
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 213);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(147, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtC.Location = new System.Drawing.Point(12, 213);
+            this.txtC.Name = "txtC";
+            this.txtC.Size = new System.Drawing.Size(147, 20);
+            this.txtC.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 291);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtC);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Run_button);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Работа с треугольником";
@@ -132,14 +132,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Run_button;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtC;
     }
 }
 
