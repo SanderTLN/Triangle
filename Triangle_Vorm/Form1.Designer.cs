@@ -53,6 +53,7 @@
             this.Run_button.TabIndex = 0;
             this.Run_button.Text = "Запуск";
             this.Run_button.UseVisualStyleBackColor = false;
+            this.Run_button.Click += new System.EventHandler(this.Run_button_Click);
             // 
             // pictureBox1
             // 
