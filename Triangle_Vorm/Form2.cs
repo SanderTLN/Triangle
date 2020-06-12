@@ -12,6 +12,7 @@ namespace Triangle_Vorm
 {
     public partial class Form2 : Form
     {
+        private bool byHeight;
         public Form2()
         {
             InitializeComponent();
@@ -22,52 +23,63 @@ namespace Triangle_Vorm
 
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void txtB_TextChanged(object sender, EventArgs e)
         {
 
-            listView1.Items.Clear(); //Очистка формы от значений которые были до этого
+        }
 
-            if (numericUpDown1.Value > 0 && numericUpDown2.Value > 0 && numericUpDown3.Value > 0 && checkBox1.Checked == true) // Проверка на введённые символы и какая кнопка мыши была нажата
+        private void txtA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtH_TextChanged(object sender, EventArgs e)
+        {
+            if (txtH.TextLength > 0)
             {
-                double a, b, c;
-                a = Convert.ToDouble(numericUpDown1.Value);
-                b = Convert.ToDouble(numericUpDown2.Value);
-                c = Convert.ToDouble(numericUpDown3.Value);
-                Triangle triangle = new Triangle(a, b, c);
-                listView1.Items.Add("Сторона a");
-                listView1.Items.Add("Сторона b");
-                listView1.Items.Add("Сторона c");
-                listView1.Items.Add("Периметр");
-                listView1.Items.Add("Площадь");
-                listView1.Items.Add("Высота");
-                listView1.Items.Add("Существует?");
-                listView1.Items.Add("Спецификатор");
-                listView1.Items[0].SubItems.Add(triangle.outputA());
-                listView1.Items[1].SubItems.Add(triangle.outputB());
-                listView1.Items[2].SubItems.Add(triangle.outputC());
-                listView1.Items[3].SubItems.Add(Convert.ToString(triangle.Perimeter()));
-                listView1.Items[4].SubItems.Add(Convert.ToString(triangle.Surface()));
-                listView1.Items[5].SubItems.Add(Convert.ToString(triangle.Height())); // Метод нахождения высоты
-                if (a == b && b == c && c == b) { listView1.Items[7].SubItems.Add("Равносторонний"); } // Типы треугольников
-                else if (b == c) { listView1.Items[7].SubItems.Add("Равнобедренный"); }
-                else { listView1.Items[7].SubItems.Add("Разносторонний"); }
-                if (triangle.ExistTriangle) { listView1.Items[6].SubItems.Add("Не существует"); }
-                else if (triangle.Height() == 0) { listView1.Items[6].SubItems.Add("Не существует"); }
-                else if ((a + b) < c && (b + c) < a && (a + c) < b) { listView1.Items[6].SubItems.Add("Не существует"); }
-                else listView1.Items[6].SubItems.Add("Существует");
+                txtB.Enabled = false;
+                txtC.Enabled = false;
+                heightCheckbox.Enabled = true;
             }
-            else if (checkBox1.Checked == false)
+            else
             {
-                listView1.Items.Clear();
+                txtB.Enabled = true;
+                txtC.Enabled = true;
+                heightCheckbox.Enabled = false;
             }
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHtext_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
